@@ -1,0 +1,76 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+ext.versionMajor = 1
+ext.versionMinor = 0
+ext.versionPatch = 0
+ext.versionClassifier = null
+ext.isSnapshot = true
+ext.minimumSdkVersion = 14
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.2"
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+        applicationId "com.example.mojtaba.sootblower"
+        minSdkVersion project.ext.minimumSdkVersion
+        targetSdkVersion 27
+        versionCode generateVersionCode()
+        versionName generateVersionName()
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+private Integer generateVersionCode() {
+    return ext.minimumSdkVersion * 10000000 + ext.versionMajor * 10000 + ext.versionMinor * 100 + ext.versionPatch
+}
+
+private String generateVersionName() {
+    String versionName = "${ext.versionMajor}.${ext.versionMinor}.${ext.versionPatch}"
+    if (ext.versionClassifier == null) {
+        if (ext.isSnapshot) {
+            ext.versionClassifier = "SNAPSHOT"
+        }
+    }
+
+    if (ext.versionClassifier != null) {
+        versionName += "-" + ext.versionClassifier
+    }
+    return versionName
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:support-v4:27.0.2'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    compile rootProject.ext.libraries.appCompat
+    compile rootProject.ext.libraries.design
+    compile rootProject.ext.libraries.support
+    compile rootProject.ext.libraries.cardView
+    compile rootProject.ext.libraries.recyclerView
+    compile rootProject.ext.libraries.butterKnife
+    compile rootProject.ext.libraries.circleImageView
+    compile rootProject.ext.libraries.calliGraphy
+    compile rootProject.ext.libraries.pageIndicator
+    compile rootProject.ext.libraries.gson
+    compile rootProject.ext.libraries.viewPagerTransforms
+    testCompile 'junit:junit:4.12'
+    annotationProcessor rootProject.ext.libraries.butterKnifeCompile
+}
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.google.com/' }
+}
+
+apply plugin: 'kotlin-android-extensions'

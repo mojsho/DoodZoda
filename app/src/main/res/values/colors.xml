@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#00796b</color>
+    <color name="primaryLightColor">#48a999</color>
+    <color name="primaryDarkColor">#004c40</color>
+    <color name="secondaryColor">#f44336</color>
+    <color name="secondaryLightColor">#ff7961</color>
+    <color name="secondaryDarkColor">#ba000d</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#000000</color>
+
+    <color name="textColor">#FFFFFF</color>
+    <color name="textColor2">#000000</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="green">#00c853</color>
+    <color name="red">#d50000</color>
+    <color name="grey">#efefef</color>
+
+    <color name="bloodColor">#c20000</color>
+    <color name="nicotineColor">#a56b25</color>
+    <color name="carbonColor">#a58c96</color>
+    <color name="anxietyColor">#20abb5</color>
+    <color name="nerveColor">#40b54c</color>
+    <color name="lungColor">#f2b5a2</color>
+
+    <color name="solid1">#519657</color>
+    <color name="solid2">#ffa726</color>
+
+    <color name="intro1">#006598</color>
+    <color name="intro2">#373737</color>
+    <color name="intro3">#4E1E74</color>
+    <color name="intro4">#796A62</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

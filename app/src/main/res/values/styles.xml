@@ -1,0 +1,208 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/primaryTextColor</item>
+
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+    </style>
+
+    <style name="MyAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/primaryTextColor</item>
+
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">true</item>
+    </style>
+
+    <style name="EditTextHint" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/primary_text_size</item>
+        <item name="android:textColor">@color/textColor</item>
+
+        <item name="fontPath">@string/font_address</item>
+
+        <item name="colorControlNormal">@color/white</item>
+
+        //added attributes
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ProgressBar" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/primaryTextColor</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="MyIntroTextContainerStyle" parent="Theme.AppCompat">
+        <item name="android:background">@drawable/intro_description_background</item>
+        <item name="android:padding">@dimen/intro_description_text_padding</item>
+        <item name="android:layout_margin">@dimen/intro_description_text_margin</item>
+    </style>
+
+    <style name="MyIntroTextDescriptionStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/intro_description_text_size</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="MyIntroTextDescriptionTitleStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/intro_description_title_text_size</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="MyIntroButtonNextStyle" parent="Base.Widget.AppCompat.Button">
+        <item name="android:textSize">@dimen/intro_button_text_size</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:drawableEnd">@drawable/ic_navigate_next_white_48px</item>
+        <item name="android:padding">@dimen/intro_description_text_padding</item>
+        <item name="android:background">@drawable/intro_button_background</item>
+    </style>
+
+    <style name="MyIntroButtonPreviousStyle" parent="Base.Widget.AppCompat.Button">
+        <item name="android:textSize">@dimen/intro_button_text_size</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:drawableStart">@drawable/ic_navigate_before_white_48px</item>
+        <item name="android:padding">@dimen/intro_description_text_padding</item>
+        <item name="android:background">@drawable/intro_button_background</item>
+    </style>
+
+    <style name="MyIntroTitleTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:padding">@dimen/intro_title_padding</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/intro_title_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/intro_title_background</item>
+    </style>
+
+    <style name="MyTimeLapseTextStyle" parent="TextAppearance.AppCompat">
+        <item name="fontPath">@string/font_address</item>
+        <item name="android:paddingEnd" tools:targetApi="jelly_bean_mr1">@dimen/time_row_padding
+        </item>
+        <item name="android:paddingLeft">@dimen/time_row_padding</item>
+        <item name="android:paddingStart" tools:targetApi="jelly_bean_mr1">@dimen/time_row_padding
+        </item>
+        <item name="android:paddingRight">@dimen/time_row_padding</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/time_lapse_text_size</item>
+    </style>
+
+    <style name="MyMainPageCardViewStyle" parent="Theme.AppCompat">
+        <item name="android:padding">@dimen/card_view_padding</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/card_view_margin_right_left
+        </item>
+        <item name="android:layout_marginRight">@dimen/card_view_margin_right_left</item>
+        <item name="android:layout_marginStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/card_view_margin_right_left
+        </item>
+        <item name="android:layout_marginLeft">@dimen/card_view_margin_right_left</item>
+        <item name="android:layout_marginTop">@dimen/card_view_margin_right_left</item>
+        <item name="android:layout_marginBottom">@dimen/card_view_margin_right_left</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="MyMainPageCircularProgress" parent="Theme.AppCompat">
+        <item name="progressColor">@color/black</item>
+        <item name="progressThickness">2dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="MyTimeLapseTitleTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:background">@drawable/border_bottom_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/time_fragment_title_text_size</item>
+    </style>
+
+    <style name="MyTimeLapseContainerStyle" parent="Theme.AppCompat">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:elevation" tools:targetApi="lollipop">5dp</item>
+        <item name="android:padding">@dimen/time_fragment_container_padding</item>
+        <item name="android:background">@color/primaryColor</item>
+    </style>
+
+    <style name="MyTimeLapseContainerExpandStyle" parent="Theme.AppCompat">
+        <item name="android:src">@drawable/ic_expand_less_white_48px</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:elevation" tools:targetApi="lollipop">5dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingEnd" tools:targetApi="jelly_bean_mr1">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingStart" tools:targetApi="jelly_bean_mr1">5dp</item>
+        <item name="android:background">@drawable/time_lapse_container_expand_container_background
+        </item>
+    </style>
+
+    <style name="MyControlButtonStyle" parent="Theme.AppCompat">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/secondaryDarkColor</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:textSize">@dimen/main_page_main_to_progress_button_text_size</item>
+        <item name="android:background">@drawable/main_to_progress_button_background</item>
+    </style>
+
+    <style name="MyCardViewTitleStyle" parent="TextAppearance.AppCompat">
+        <item name="android:background">#55000000</item>
+        <item name="android:gravity">start</item>
+        <item name="android:layout_gravity">bottom|end</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/card_view_title_text_size</item>
+        <item name="android:padding">@dimen/card_view_title_text_padding</item>
+        <item name="android:shadowColor">@android:color/black</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">5</item>
+    </style>
+
+    <style name="SootBlowerSuggestionImageViewStyle" parent="Theme.AppCompat">
+        <item name="android:padding">@dimen/card_view_padding</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="SootBlowerCommentsTitleAllButtonStyle" parent="TextAppearance.AppCompat">
+        <item name="android:text">@string/comment_main_load_more_button_text</item>
+        <item name="android:textColor">@color/primaryDarkColor</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:background">@drawable/main_all_comments_button_background</item>
+        <item name="android:layout_margin">@dimen/card_view_margin_top_bottom</item>
+        <item name="android:textSize">@dimen/comment_main_container_title_text_size</item>
+    </style>
+
+    <style name="SootBlowerCommentsTitleTextViewStyle" parent="TextAppearance.AppCompat">
+        <item name="android:layout_margin">@dimen/card_view_margin_top_bottom</item>
+        <item name="android:textSize">@dimen/comment_main_container_title_text_size</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
+        <item name="android:text">@string/comment_main_container_title_text</item>
+    </style>
+
+</resources>

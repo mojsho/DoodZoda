@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_intro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryDarkColor"
+    tools:context="com.example.mojtaba.doodzoda.activity.IntroActivity"
+    tools:ignore="MissingPrefix">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/intro_appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/intro_frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/intro_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/intro_title_text"
+                style="@style/MyIntroTitleTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/intro_footer_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/intro_footer_background"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/intro_previous_button"
+                        style="@style/MyIntroButtonPreviousStyle"
+                        fontPath="@string/font_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <com.rd.PageIndicatorView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        app:piv_viewPager="@id/intro_viewpager" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/intro_next_button"
+                        style="@style/MyIntroButtonNextStyle"
+                        fontPath="@string/font_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/intro_cigarettes_per_day"
+            android:theme="@style/EditTextHint"
+            app:hintTextAppearance="@style/Widget.Design.TextInputLayout">
+
+            <EditText
+                android:id="@+id/cigarettes_per_day_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:inputType="number"
+                android:nextFocusForward="@+id/cigarettes_cost_edit_text"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/intro_title_text_size" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/intro_cigarettes_cost"
+            android:theme="@style/EditTextHint"
+            app:hintTextAppearance="@style/Widget.Design.TextInputLayout">
+
+            <EditText
+                android:id="@+id/cigarettes_cost_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="@string/intro_cigarettes_cost_text"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/intro_title_text_size" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/start_button"
+            fontPath="@string/font_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/time_restart_button_margin"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingEnd="@dimen/time_fragment_change_button_padding"
+            android:paddingStart="@dimen/time_fragment_change_button_padding"
+            android:text="@string/start_period"
+            android:textColor="@color/primaryColor"
+            android:textSize="@dimen/intro_button_text_size"
+            tools:ignore="MissingPrefix" />
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

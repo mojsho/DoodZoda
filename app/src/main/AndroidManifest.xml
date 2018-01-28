@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mojtaba.doodzoda">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_quit_smoking"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_quit_smoking"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.mojtaba.doodzoda.activity.MainActivity"
+            android:screenOrientation="portrait">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+
+        <service
+            android:name="com.example.mojtaba.doodzoda.service.TimeLapseService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.mojtaba.doodzoda.activity.IntroActivity"
+            android:theme="@style/MyAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.mojtaba.doodzoda.activity.ProgressActivity" />
+        <activity android:name="com.example.mojtaba.doodzoda.activity.CommentsActivity" />
+        <activity android:name="com.example.mojtaba.doodzoda.activity.UserDetailsActivity" />
+    </application>
+
+</manifest>

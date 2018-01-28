@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name">Dood Zoda</string>
+    <string name="app_name_persian">دودزُدا</string>
+
+    <string name="more_comments_shared_transition_name">more_comments_shared_transition</string>
+    <string name="rate_up_shared_transition_name">rate_up_shared_transition</string>
+    <string name="rate_up_text_shared_transition_name">rate_up_text_shared_transition</string>
+    <string name="rate_down_shared_transition_name">rate_down_shared_transition</string>
+    <string name="rate_down_text_shared_transition_name">rate_down_text_shared_transition</string>
+    <string name="user_avatar_text_shared_transition_name">user_avatar_text_shared_transition</string>
+
+    <string name="intro_title">دودزُدا</string>
+    <string name="intro_cigarettes_per_day">تعداد نخ سیگار در هر روز</string>
+    <string name="intro_cigarettes_cost">میانگین بهای هر نخ</string>
+    <string name="intro_to_app">آماده برای شروع</string>
+    <string name="intro_cigarettes_cost_text">500</string>
+    <string name="intro_go_to_app">وارد شدن به نرم‌افزار</string>
+    <string name="intro_skip">رد کردن</string>
+    <string name="intro_title_button_text">پیش درآمد</string>
+    <string name="intro_count_button_text">تعداد نخ</string>
+    <string name="intro_cost_button_text">بهای نخ</string>
+    <string name="intro_to_app_button_text">آمادگی</string>
+    <string name="intro_start_button_text">آغاز</string>
+
+    <string name="intro_title_description">درود کاربر گرامی!\nخوشحالیم که به نرم‌افزار ما اعتماد کردید و در راستای اراده خود برای کنار گذاشتن سیگار استفاده می‌کنید.\nپیش از آغاز استفاده از نرم‌افزار مختصر اطلاعاتی را نیاز داریم که در گام‌های بعد از شما می‌خواهیم.\nبرای ادامه کلید تعداد نخ را لمس کنید.</string>
+    <string name="intro_title_description_title">سخنی با کاربر</string>
+    <string name="intro_cigarettes_per_day_description">در ابتدا لطفا تعداد نخی که در روز می‌کشیدید را ثبت کنید.</string>
+    <string name="intro_cigarette_cost_description">حالا بهای میانگین هر نخی که می‌کشیدید را ثبت کنید.</string>
+    <string name="intro_go_to_app_description">سپاسگزارم. حالا می‌توانید نتیجه بهبود سلامتی‌تان پس از کنار گذاشتن سیگار را از همین لحظه زیر نظر بگیرید.</string>
+    <string name="intro_go_to_app_title">آغاز سلامتی</string>
+
+    <string-array name="intro_cigarette_cost_items">
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>600</item>
+        <item>700</item>
+        <item>800</item>
+        <item>900</item>
+        <item>1000</item>
+        <item>1100</item>
+        <item>1200</item>
+        <item>1300</item>
+        <item>1400</item>
+        <item>1500</item>
+        <item>1600</item>
+        <item>1700</item>
+        <item>1800</item>
+        <item>2000</item>
+    </string-array>
+
+    <string-array name="intro_cigarette_per_day_items">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+
+    <string name="year_title">سال</string>
+    <string name="month_title">ماه</string>
+    <string name="day_title">روز</string>
+    <string name="hour_title">ساعت</string>
+    <string name="minute_title">دقیقه</string>
+    <string name="second_title">ثانیه</string>
+
+    <string name="time_passed_title">زمان سپری شده در دوره</string>
+    <string name="total_time_passed_title">تمام زمان سپری شده</string>
+
+    <string name="start_period">شروع دوره</string>
+
+    <string name="main_to_progress_button_text">بررسی</string>
+    <string name="main_to_progress_title">پیشرفت سلامتی من</string>
+
+    <string name="activity_progress_title">پیشرفت سلامتی من</string>
+
+    <string name="main_suggestion_button_text">نشان بده</string>
+
+    <string name="restart_button_text">شروع دوباره دوره</string>
+    <string name="restart_dialog_positive">بله</string>
+    <string name="restart_dialog_negative">خیر</string>
+    <string name="restart_dialog_title">درخواست تایید</string>
+    <string name="restart_dialog_message">آیا دوره خود را دوباره شروع می‌کنید؟</string>
+
+    <string name="main_suggestion_item1">کتاب تصادفی</string>
+    <string name="main_suggestion_item2">نمایش تصادفی</string>
+    <string name="main_suggestion_item3">فیلم تصادفی</string>
+    <string name="main_suggestion_item4">دمنوش تصادفی</string>
+
+    <string name="comment_main_container_title_text">دیدگاه‌ها</string>
+    <string name="comment_main_load_more_button_text">همه</string>
+
+    <string name="main_page_progress_text">درصد پیشرفت سلامتی خود بعد از ترک سیگار را در این قسمت دنبال کنید.</string>
+    <string name="blood_pressure_text">فشار خون، ضربان قلب و دمای دست‌ها و پاهای شما به میزان‌های عادی رسیده است.</string>
+    <string name="nicotine_bloodstream_text">مقدار نیکوتین در جریان خون شما به ۶/۲۵٪ رسیده است. این یعنی ۹۳/۷۵٪ کاهش نیکوتین.</string>
+    <string name="carbon_monoxide_text">میزان اکسیژن خون شما به مقدار لازم رسیده است. اندازه‌های کربن مونوکسید به حد کافی رسیده است.</string>
+    <string name="anxiety_text">درجه اضطراب به حد زیادی افزایش می‌یابد و پس از دو هفته به حالت عادی قبل از ترک برمی‌گردد.</string>
+    <string name="nerve_ending_text">پایانه‌های عصبی آسیب دیده شروع به دوباره‌سازی می‌کنند و حس بویایی و چشایی به حالت عادی خود بازمی‌گردد. عصبانیت ترک و تحریک‌پذیری به بیشترین درجه خود می‌رسد.</string>
+    <string name="lung_improvement_text">تمام بدن از نیکوتین خالی شده است و ۹۰٪ از مواد شیمیایی مشتق شده از نیکوتین از طریق ادرار دفع می‌شود. نشانه‌های بازگیری مواد شیمیایی از جمله بی‌قراری در این مرحله به بیشترین حد خود می‌رسد. نفس کشیدن آسوده‌تر شده و کارایی ریه‌های شما شروع به افزایش می‌کند.</string>
+
+    <string name="progress_finished">تمام</string>
+    <string name="progress_remaining_hour">%1$2d ساعت باقیمانده</string>
+    <string name="progress_remaining_minute">%1$2d دقیقه باقیمانده</string>
+
+    <string name="font_address">fonts/Shabnam-FD.ttf</string>
+
+    <string-array name="main_progress_items">
+        <item>خون</item>
+        <item>نیکوتین</item>
+        <item>اکسیژن</item>
+        <item>نگرانی</item>
+        <item>سکته</item>
+        <item>سردرد</item>
+        <item>سرفه</item>
+        <item>سرطان</item>
+        <item>ریه</item>
+        <item>دهان</item>
+        <item>پانکراس</item>
+        <item>دیابت</item>
+        <item>مرگ</item>
+    </string-array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_time_progress">TimeProgressActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

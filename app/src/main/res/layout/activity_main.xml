@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mojtaba.doodzoda.activity.MainActivity"
+    tools:ignore="MissingPrefix">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="@color/grey">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/time_lapse_container"
+                style="@style/MyTimeLapseContainerStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/time_fragment_title"
+                        style="@style/MyTimeLapseTitleTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <com.example.mojtaba.doodzoda.view.StopSmokingViewPager
+                    android:id="@+id/main_time_view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.rd.PageIndicatorView
+                    android:id="@+id/main_time_view_pager_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    attrs:piv_animationType="swap"
+                    attrs:piv_interactiveAnimation="true"
+                    attrs:piv_radius="3dp"
+                    attrs:piv_viewPager="@+id/main_time_view_pager" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/main_progress_card_view"
+                            style="@style/MyMainPageCardViewStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <FrameLayout
+                                    android:id="@+id/main_to_progress_image_container"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:id="@+id/main_to_progress_image"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:adjustViewBounds="true"
+                                        android:scaleType="fitStart"
+                                        android:src="@drawable/main_progress_card_view_image" />
+
+                                    <TextView
+                                        style="@style/MyCardViewTitleStyle"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/main_to_progress_title" />
+                                </FrameLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingEnd="@dimen/card_view_padding"
+                                    android:paddingLeft="@dimen/card_view_padding"
+                                    android:paddingRight="@dimen/card_view_padding"
+                                    android:paddingStart="@dimen/card_view_padding">
+
+                                    <Button
+                                        android:id="@+id/main_to_progress_button"
+                                        style="@style/MyControlButtonStyle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="40dp"
+                                        android:text="@string/main_to_progress_button_text" />
+
+                                    <FrameLayout
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_weight="0">
+
+                                        <com.example.mojtaba.doodzoda.view.StopSmokingCircularProgressBar
+                                            android:id="@+id/main_progress_circular"
+                                            style="@style/MyMainPageCircularProgress"
+                                            android:layout_width="55dp"
+                                            android:layout_height="55dp" />
+
+                                        <TextView
+                                            android:id="@+id/main_progress_circular_text"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/main_page_progress_text_size" />
+                                    </FrameLayout>
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/main_suggestions_card_view"
+                            style="@style/MyMainPageCardViewStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <com.example.mojtaba.doodzoda.view.StopSmokingViewPager
+                                        android:id="@+id/main_suggestions_viewpager"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:id="@+id/main_suggestions_viewpager_title"
+                                        style="@style/MyCardViewTitleStyle"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </FrameLayout>
+
+                                <RelativeLayout
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingEnd="@dimen/card_view_padding"
+                                    android:paddingLeft="@dimen/card_view_padding"
+                                    android:paddingRight="@dimen/card_view_padding"
+                                    android:paddingStart="@dimen/card_view_padding">
+
+                                    <Button
+                                        android:id="@+id/main_to_progress_button1"
+                                        style="@style/MyControlButtonStyle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="40dp"
+                                        android:text="@string/main_suggestion_button_text" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/time_lapse_expand_button"
+                    style="@style/MyTimeLapseContainerExpandStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_view_margin_top_bottom"
+                android:layout_marginEnd="@dimen/card_view_margin_right_left"
+                android:layout_marginStart="@dimen/card_view_margin_right_left"
+                android:layout_marginTop="@dimen/card_view_margin_top_bottom"
+                android:padding="@dimen/card_view_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/more_comments_button"
+                            style="@style/SootBlowerCommentsTitleAllButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="end"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/SootBlowerCommentsTitleTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="200dp">
+
+                    <ProgressBar
+                        android:id="@+id/main_comments_loader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:theme="@style/ProgressBar" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/comments_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:nestedScrollingEnabled="false" />
+
+                    <ImageButton
+                        android:id="@+id/get_comments_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/ic_refresh_black_48px"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/image_upload_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TEST" />
+
+        <TextView
+            android:id="@+id/image_upload_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/restart_button"
+            fontPath="@string/font_address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="@color/primaryDarkColor"
+            android:text="@string/restart_button_text"
+            android:textAlignment="center"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/time_restart_button_text_size" />
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

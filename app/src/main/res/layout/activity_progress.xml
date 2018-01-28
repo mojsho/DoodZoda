@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircularProgressBar="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mojtaba.doodzoda.activity.ProgressActivity"
+    tools:ignore="MissingPrefix">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/card_view_padding">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="شما تا کنون:"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="۷۰ نخ سیگار و ۳ بسته سیگار"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="را نکشیده‌اید!"
+                    android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e8e5e5"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <android.support.v4.widget.NestedScrollView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/card_view_margin_right_left"
+                        android:layout_marginStart="@dimen/card_view_margin_right_left"
+                        android:layout_weight="1">
+
+                        <TextView
+                            fontPath="@string/font_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/blood_pressure_text" />
+                    </android.support.v4.widget.NestedScrollView>
+
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0"
+                        android:gravity="center">
+
+                        <com.example.mojtaba.doodzoda.view.StopSmokingCircularProgressBar
+                            android:id="@+id/circular_progress_bar_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            CircularProgressBar:progressColor="@color/bloodColor"
+                            CircularProgressBar:progressThickness="@dimen/each_progress_stroke_width" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/time_remaining_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="@color/bloodColor"
+                                android:textSize="@dimen/percentage_text_size" />
+
+                            <TextView
+                                android:id="@+id/percentage_1"
+                                fontPath="@string/font_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="@color/bloodColor"
+                                android:textSize="@dimen/percentage_text_size" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e8e5e5"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <android.support.v4.widget.NestedScrollView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/card_view_margin_right_left"
+                        android:layout_marginStart="@dimen/card_view_margin_right_left"
+                        android:layout_weight="1">
+
+                        <TextView
+                            fontPath="@string/font_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/nicotine_bloodstream_text" />
+                    </android.support.v4.widget.NestedScrollView>
+
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0"
+                        android:gravity="center">
+
+                        <com.example.mojtaba.doodzoda.view.StopSmokingCircularProgressBar
+                            android:id="@+id/circular_progress_bar_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            CircularProgressBar:progressColor="@color/nicotineColor"
+                            CircularProgressBar:progressThickness="@dimen/each_progress_stroke_width" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/time_remaining_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="@color/nicotineColor"
+                                android:textSize="@dimen/percentage_text_size" />
+
+                            <TextView
+                                android:id="@+id/percentage_2"
+                                fontPath="@string/font_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textColor="@color/nicotineColor"
+                                android:textSize="@dimen/percentage_text_size" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e8e5e5"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <android.support.v4.widget.NestedScrollView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/card_view_margin_right_left"
+                        android:layout_marginStart="@dimen/card_view_margin_right_left"
+                        android:layout_weight="1">
+
+                        <TextView
+                            fontPath="@string/font_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/carbon_monoxide_text" />
+                    </android.support.v4.widget.NestedScrollView>
+
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0"
+                        android:gravity="center">
+
+                        <com.example.mojtaba.doodzoda.view.StopSmokingCircularProgressBar
+                            android:id="@+id/circular_progress_bar_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            CircularProgressBar:progressColor="@color/carbonColor"
+                            CircularProgressBar:progressThickness="@dimen/each_progress_stroke_width" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/time_remaining_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="@color/carbonColor"
+                                android:textSize="@dimen/percentage_text_size" />
+
+                            <TextView
+                                android:id="@+id/percentage_3"
+                                fontPath="@string/font_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textColor="@color/carbonColor"
+                                android:textSize="@dimen/percentage_text_size" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e8e5e5"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <android.support.v4.widget.NestedScrollView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/card_view_margin_right_left"
+                        android:layout_marginStart="@dimen/card_view_margin_right_left"
+                        android:layout_weight="1">
+
+                        <TextView
+                            fontPath="@string/font_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/anxiety_text" />
+                    </android.support.v4.widget.NestedScrollView>
+
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0"
+                        android:gravity="center">
+
+                        <com.example.mojtaba.doodzoda.view.StopSmokingCircularProgressBar
+                            android:id="@+id/circular_progress_bar_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            CircularProgressBar:progressColor="@color/anxietyColor"
+                            CircularProgressBar:progressThickness="@dimen/each_progress_stroke_width" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/time_remaining_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="@color/anxietyColor"
+                                android:textSize="@dimen/percentage_text_size" />
+
+                            <TextView
+                                android:id="@+id/percentage_4"
+                                fontPath="@string/font_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textColor="@color/anxietyColor"
+                                android:textSize="@dimen/percentage_text_size" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e8e5e5"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <android.support.v4.widget.NestedScrollView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/card_view_margin_right_left"
+                        android:layout_marginStart="@dimen/card_view_margin_right_left"
+                        android:layout_weight="1">
+
+                        <TextView
+                            fontPath="@string/font_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:scrollHorizontally="true"
+                            android:text="@string/nerve_ending_text" />
+                    </android.support.v4.widget.NestedScrollView>
+
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0"
+                        android:gravity="center">
+
+                        <com.example.mojtaba.doodzoda.view.StopSmokingCircularProgressBar
+                            android:id="@+id/circular_progress_bar_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            CircularProgressBar:progressColor="@color/nerveColor"
+                            CircularProgressBar:progressThickness="@dimen/each_progress_stroke_width" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/time_remaining_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="@color/nerveColor"
+                                android:textSize="@dimen/percentage_text_size" />
+
+                            <TextView
+                                android:id="@+id/percentage_5"
+                                fontPath="@string/font_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textColor="@color/nerveColor"
+                                android:textSize="@dimen/percentage_text_size" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e8e5e5"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <android.support.v4.widget.NestedScrollView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/card_view_margin_right_left"
+                        android:layout_marginStart="@dimen/card_view_margin_right_left"
+                        android:layout_weight="1">
+
+                        <TextView
+                            fontPath="@string/font_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:scrollHorizontally="true"
+                            android:text="@string/lung_improvement_text" />
+                    </android.support.v4.widget.NestedScrollView>
+
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0"
+                        android:gravity="center">
+
+                        <com.example.mojtaba.doodzoda.view.StopSmokingCircularProgressBar
+                            android:id="@+id/circular_progress_bar_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            CircularProgressBar:progressColor="@color/lungColor"
+                            CircularProgressBar:progressThickness="@dimen/each_progress_stroke_width" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/time_remaining_6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="@color/lungColor"
+                                android:textSize="@dimen/percentage_text_size" />
+
+                            <TextView
+                                android:id="@+id/percentage_6"
+                                fontPath="@string/font_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textColor="@color/lungColor"
+                                android:textSize="@dimen/percentage_text_size" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e8e5e5"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

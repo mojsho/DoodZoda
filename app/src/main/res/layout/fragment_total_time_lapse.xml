@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.mojtaba.doodzoda.fragment.TotalTimeLapseFragment"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:id="@+id/total_time_second_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/total_time_second_text_view"
+            style="@style/MyTimeLapseTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/total_time_second_title_text_view"
+            style="@style/MyTimeLapseTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/second_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/total_time_minute_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/total_time_minute_text_view"
+            style="@style/MyTimeLapseTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/total_time_minute_title_text_view"
+            style="@style/MyTimeLapseTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/minute_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/total_time_hour_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/total_time_hour_text_view"
+            style="@style/MyTimeLapseTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/total_time_hour_title_text_view"
+            style="@style/MyTimeLapseTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/hour_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/total_time_day_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/total_time_day_text_view"
+            style="@style/MyTimeLapseTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/total_time_day_title_text_view"
+            style="@style/MyTimeLapseTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/day_title" />
+    </LinearLayout>
+</LinearLayout>

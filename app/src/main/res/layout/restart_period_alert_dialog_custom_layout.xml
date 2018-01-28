@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/alert_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/alert_dialog_margin"
+        android:background="@color/primaryColor"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:text="@string/restart_dialog_title"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/alert_dialog_title_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/alert_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="@dimen/alert_dialog_margin"
+        android:text="@string/restart_dialog_message"
+        android:textColor="@color/textColor2"
+        android:textSize="@dimen/alert_dialog_message_text_size" />
+
+    <LinearLayout
+        android:id="@+id/alert_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/alert_positive_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:onClick="alertDialogPositive"
+                android:text="@string/restart_dialog_positive"
+                android:textColor="@color/primaryColor"
+                android:textSize="@dimen/alert_dialog_button_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/alert_negative_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="@string/restart_dialog_negative"
+                android:onClick="alertDialogNegative"
+                android:textColor="@color/primaryColor"
+                android:textSize="@dimen/alert_dialog_button_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

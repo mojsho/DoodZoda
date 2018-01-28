@@ -1,0 +1,24 @@
+ext {
+    minSdkVersion = 14
+    targetSdkVersion = 27
+    compiledSdkVersion = 27
+    buildToolsVersion = "27.0.3"
+
+    appCompatVersion = "27.+"
+
+    libraries = [
+            appCompat          : "com.android.support:appcompat-v7:${appCompatVersion}",
+            support            : "com.android.support:support-v4:${appCompatVersion}",
+            design             : "com.android.support:design:${appCompatVersion}",
+            cardView           : "com.android.support:cardview-v7:${appCompatVersion}",
+            recyclerView       : "com.android.support:recyclerview-v7:${appCompatVersion}",
+
+            calliGraphy        : "uk.co.chrisjenx:calligraphy:2.3.0",
+            butterKnife        : "com.jakewharton:butterknife:8.8.1",
+            butterKnifeCompile : "com.jakewharton:butterknife-compiler:8.8.1",
+            circleImageView    : "de.hdodenhof:circleimageview:2.2.0",
+            pageIndicator      : "com.romandanylyk:pageindicatorview:0.2.0@aar",
+            gson               : "com.google.code.gson:gson:2.8.2",
+            viewPagerTransforms: "com.eftimoff:android-viewpager-transformers:1.0.1@aar",
+    ]
+}
